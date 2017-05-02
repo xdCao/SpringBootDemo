@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http:www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+
+<div id="employee">
+
+    <ul>
+
+        <li>员工编号：<span  th:text="${employ.id}"></span></li>
+        <li>员工姓名：<span  th:text="${employ.employName}"></span></li>
+        <li>员工住址：<span  th:text="${employ.employAddress}"></span></li>
+        <li>员工性别：<span  th:text="${employ.employSex}?男:女"></span></li>
+        <li>出生日期：<span  th:text="${employ.employBirth}"></span></li>
+        <li>电话：<span  th:text="${employ.employPhone}"></span></li>
+        <li>是否管理人员：<span  th:text="${employ.isLeader}?是:否"></span></li>
+
+    </ul>
+
+</div>
+
+</body>
+</html>

@@ -20,6 +20,7 @@
         <setting name="provider-name" value="" />
         <datasource-mapping>
           <factory-entry name="NewPersistenceUnit" value="2e6e2cc3-8533-4f4b-aae0-dd2a89ff7c8b" />
+          <factory-entry name="entityManagerFactory" />
         </datasource-mapping>
         <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/../SpringBootDemo/src/main/resources/META-INF/persistence.xml" />
       </configuration>
