@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>消息列表</title>
+</head>
+<body>
+
+<table border="1">
+
+<tr th:each="message,messageStat:${messages}">
+    <!--<td ></td>-->
+    <!--<td th:text="${message.messageTitle}"></td>-->
+    <!--<td th:text="${message.messageContent}"></td>-->
+    <!--<td th:text="${message.employByEmployId.employName}"></td>-->
+
+    <td><a th:text="${message.id}" th:href="@{detail(id=${message.id})}"></a></td>
+    <td><a th:text="${message.messageTitle}" th:href="@{detail(id=${message.id})}"></a></td>
+    <td><a th:text="${message.messageContent}" th:href="@{detail(id=${message.id})}"></a></td>
+    <td><a th:text="${message.employByEmployId.employName}" th:href="@{detail(id=${message.id})}"></a></td>
+
+</tr>
+</table>
+
+</body>
+</html>

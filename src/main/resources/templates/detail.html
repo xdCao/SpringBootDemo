@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>消息详情</title>
+</head>
+<body>
+
+<div th:text="${message.messageTitle}"></div>
+
+<div th:text="${message.messageContent}"></div>
+
+<form th:action="@{/reply(id=${message.id})}" method="post">
+
+    <input type="text" name="content"/>
+    <p/>
+    <input type="submit" value="回复"/>
+
+</form>
+
+<a th:href="/showReplies">显示回复列表</a>
+
+</body>
+</html>

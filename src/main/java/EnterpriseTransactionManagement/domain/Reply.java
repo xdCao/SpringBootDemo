@@ -16,6 +16,7 @@ public class Reply {
     private Message messageByMessageId;
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id", nullable = false)
     public int getId() {
         return id;
