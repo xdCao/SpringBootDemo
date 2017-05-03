@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>发布投票</title>
+
+    <script>
+        var i=4;
+        function addVoteOption() {
+            var voteP=document.getElementById("voteOptionList");
+            var inputText=document.createTextNode("选项"+(i++)+"名称：");
+            voteP.appendChild(inputText);
+            var inputP=document.createElement("input");
+            inputP.type="text";
+            inputP.name="voteOption";
+            voteP.appendChild(inputP);
+            var brP=document.createElement("br");
+            voteP.appendChild(brP);
+        }
+
+    </script>
+
+</head>
+<body>
+
+<form action="/addVote" method="post">
+
+    <select name="channel">
+        <option value="1">NBA</option>
+        <option value="2">CBA</option>
+        <option value="3">世界杯</option>
+        <option value="4">中超</option>
+        <option value="5">英超</option>
+        <option value="6">F1</option>
+    </select>
+    <br/>
+
+    请输入投票名称<input type="text" name="voteName"/>
+
+    <br/>
+    <div id="voteOptionList">
+        选项1名称<input type="text" name="voteOption"/><br/>
+        选项2名称<input type="text" name="voteOption"/><br/>
+        选项3名称<input type="text" name="voteOption"/><br/>
+    </div>
+
+    <input type="button" value="新增投票选项" onclick="addVoteOption()"/>
+
+    <input type="submit" value="发布"/>
+    <input type="reset" value="重置"/>
+
+</form>
+
+
+</body>
+</html>

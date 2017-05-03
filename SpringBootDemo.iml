@@ -21,6 +21,7 @@
         <datasource-mapping>
           <factory-entry name="NewPersistenceUnit" value="2e6e2cc3-8533-4f4b-aae0-dd2a89ff7c8b" />
           <factory-entry name="entityManagerFactory" />
+          <factory-entry name="noname-a.xml@0" value="8d6d4a56-9487-4068-b6ba-1af4d38b4c54" />
         </datasource-mapping>
         <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/../SpringBootDemo/src/main/resources/META-INF/persistence.xml" />
       </configuration>
@@ -32,6 +33,7 @@
     <content url="file://$MODULE_DIR$/../SpringBootDemo">
       <sourceFolder url="file://$MODULE_DIR$/../SpringBootDemo/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/../SpringBootDemo/src/main/java" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/../SpringBootDemo/src/main/java/EnterpriseTransactionManagement" />
       <excludeFolder url="file://$MODULE_DIR$/../SpringBootDemo/src/main/java/demo01" />
       <excludeFolder url="file://$MODULE_DIR$/../SpringBootDemo/src/main/java/demo02" />
       <excludeFolder url="file://$MODULE_DIR$/../SpringBootDemo/src/main/java/demo03" />
